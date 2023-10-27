@@ -1,0 +1,60 @@
+@import 'colors';
+
+.burger {
+	position: relative;
+	display: flex;
+	width: 30px;
+	height: 24px;
+	@media (max-width: 375px) {
+		width: 22px;
+		height: 17px;
+	}
+	&:hover &__line,
+	&:hover::before,
+	&:hover::after {
+		background-color: $light-blue;
+	}
+
+	&__line {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		transform: translateY(-50%);
+		background-color: $blue;
+		transition: 0.3s ease-in-out;
+	}
+
+	&::before,
+	&::after {
+		position: absolute;
+		content: '';
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: $blue;
+		transition: 0.3s ease-in-out;
+	}
+	&::before {
+		top: 0;
+	}
+	&::after {
+		bottom: 0;
+	}
+
+	&--active &__line {
+		opacity: 0;
+	}
+
+	&--active::before {
+		top: 50%;
+		transform: rotate(45deg);
+	}
+
+	&--active::after {
+		bottom: auto;
+		top: 50%;
+		transform: rotate(-45deg);
+	}
+}

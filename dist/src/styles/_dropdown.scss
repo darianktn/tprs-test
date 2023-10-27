@@ -1,0 +1,47 @@
+@import 'colors';
+
+.dropdown {
+	padding: 24px 13px 24px;
+	position: absolute;
+	top: 85%;
+	right: 1%;
+	width: 247px;
+	background: #fff;
+	box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+	.descr {
+		font-size: 16px;
+		font-weight: 400;
+		color: $black;
+	}
+	.tel {
+		display: inline-block;
+		margin-bottom: 20px;
+		font-size: 28px;
+		font-weight: 700;
+		color: $black;
+	}
+	a {
+		font-size: 16px;
+		font-weight: 700;
+		color: $blue;
+		text-decoration: underline;
+	}
+	&::before {
+		position: absolute;
+		content: '';
+		top: -11px;
+		right: 15px;
+		width: 0;
+		height: 0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 11px solid $white;
+	}
+
+	&--visible {
+		opacity: 1;
+	}
+}

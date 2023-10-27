@@ -1,0 +1,100 @@
+.modal {
+	&__overlay {
+		display: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+		height: 100vh;
+		width: 100%;
+	}
+
+	&__window {
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		width: 400px;
+		background-color: $white;
+		box-shadow: 0px 3px 6px #00000029;
+		@media (max-width: 375px) {
+			height: 100vh;
+		}
+		.modal__close {
+			align-self: flex-end;
+			path {
+				fill: $grey;
+			}
+		}
+	}
+
+	&__content {
+		padding: 40px;
+		form {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 32px;
+		}
+
+		span {
+			display: inline-block;
+			font-size: 16px;
+			font-weight: 800;
+			margin-bottom: 32px;
+		}
+
+		input {
+			padding: 19px 24px;
+			border-radius: 8px;
+			border: 2px solid $grey-blue;
+			background-color: $white;
+			width: 100%;
+			font-size: 16px;
+			font-weight: 400;
+			&::placeholder {
+				font-size: 16px;
+				font-weight: 400;
+			}
+		}
+
+		input[type='email'] {
+			margin-bottom: 16px;
+		}
+
+		input[type='password'] {
+			margin-bottom: 23px;
+		}
+
+		button {
+			padding: 14px 35px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 8px;
+			background-color: $red;
+			color: $white;
+			font-size: 24px;
+			font-weight: 700;
+			width: 100%;
+		}
+		a {
+			display: block;
+			font-size: 16px;
+			font-weight: 400;
+			color: $blue;
+			text-decoration: underline;
+		}
+
+		.reminder {
+			margin-bottom: 16px;
+		}
+	}
+}
+
+.modal__overlay--visible {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}

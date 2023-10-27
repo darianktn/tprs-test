@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="dist/src/styles/styles.css">
+
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><span class="login">ЛИЧНЫЙ КАБИНЕТ</span></li>
+        <li class="header__nav-item"><button class="login-button">Вход в Личный кабинет</button></li>
+        <li class="header__nav-item"><span class="faq">КАК ЭТО РАБОТАЕТ</span></li>
+        <li class="header__nav-item"><a href="#" class="service">Условия использования сервиса</a></li>
+        <li class="header__nav-item"><a href="#" class="payment">Способы оплаты</a></li>
+        <li class="header__nav-item"><a href="#" class="questions">Часто задаваемые вопросы</a></li>
+        <li class="header__nav-item"><a href="#" class="support">Служба поддержки</a></li>
+      </ul>
+    </nav>
+    <button class="burger">
+      <span class="burger__line"></span>
+    </button>
+    <a class="header__logo" href="#"><img src="dist/src/img/logo.svg" alt="logo"></a>
+    <button class="header__btn-help">
+      <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+        <g id="ic_help" transform="translate(-2 -2)">
+          <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(6 6)" fill="none" stroke="#none"
+            stroke-width="3">
+            <circle cx="18" cy="18" r="18" stroke="none" />
+            <circle cx="18" cy="18" r="16.5" fill="none" />
+          </g>
+          <path id="Path_1" data-name="Path 1"
+            d="M17.112,17.374V16.6a2.892,2.892,0,0,1,.362-1.5,3.8,3.8,0,0,1,1.285-1.19,4.827,4.827,0,0,0,1.055-.833,1.262,1.262,0,0,0,.321-.851.684.684,0,0,0-.344-.6,1.629,1.629,0,0,0-.9-.222,7.048,7.048,0,0,0-3.2.969L14.441,9.906a9.37,9.37,0,0,1,4.707-1.285,5.069,5.069,0,0,1,3.168.887,2.889,2.889,0,0,1,1.15,2.417,3.448,3.448,0,0,1-.511,1.9,5.211,5.211,0,0,1-1.634,1.516,6.32,6.32,0,0,0-1.19.9,1.014,1.014,0,0,0-.24.674v.462Zm-.389,3.168a1.673,1.673,0,0,1,.484-1.285,2.017,2.017,0,0,1,1.426-.453,1.948,1.948,0,0,1,1.389.457,1.676,1.676,0,0,1,.484,1.281,1.63,1.63,0,0,1-.5,1.276,1.973,1.973,0,0,1-1.371.453,2.046,2.046,0,0,1-1.4-.448A1.619,1.619,0,0,1,16.722,20.542Z"
+            transform="translate(4.659 9)" fill="#004685" />
+          <rect id="Rectangle_12" data-name="Rectangle 12" width="44" height="44" transform="translate(2 2)"
+            fill="none" />
+        </g>
+      </svg>
+    </button>
+    <div class="dropdown">
+      <span class="descr">Тел. поддержки</span>
+      <span class="tel">8 800 123-45-67</span>
+      <a href='mailto:test@mail.ru'>Написать письмо</a>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">Поиск начислений</h1>
+        <form class="form" action="#">
+          <div class="input-wrap">
+            <label for="datasearch">
+              <input id="datasearch" type="text" placeholder="Введите данные для поиска">
+            </label>
+            <button class="form__search-icon"></button>
+          </div>
+          <button class="form__search-btn">Найти</button>
+        </form>
+        <span class="hero__descr">Чем больше параметров введено, тем полнее результаты поиска</span>
+      </div>
+    </section>
+    <section class="cards">
+      <div class="container">
+        <h2 class="cards__title">Здесь можно оплатить</h2>
+        <h2 class="cards__title--mobile">Узнайте, как оплатить</h2>
+        <ul class="titles">
+          <li class="titles__item"><a href="#content-1">Штрафы ГИБДД</a></li>
+          <li class="titles__item"><a href="#content-2">Судебные задолженности</a></li>
+          <li class="titles__item"><a href="#content-3">Налоги</a></li>
+          <li class="titles__item"><a href="#content-4">Услуги Росреестра</a></li>
+          <li class="titles__item titles__item--black">и другие услуги</li>
+        </ul>
+        <ul class="content accordion-list">
+          <li class="content__item accordion">
+            <div class="content__text-wrap">
+              <button class="accordion-control">
+                <span class="title-icon title-icon--1"></span>
+                <h3 class="content__title">Штрафы ГИБДД</h3>
+                <span class="accordion-icon"></span>
+              </button>
+              <div class="accordion-content">
+                <p class="content__descr">
+                  <span class="content__descr-top">
+                    Для поиска укажите номера водительского удостоверения и&nbsp;свидетельства
+                    о&nbsp;регистрации&nbsp;ТС или номер штрафа.
+                  </span>
+                  <span>
+                    Если у&nbsp;вас есть на&nbsp;руках постановление
+                    о&nbsp;штрафе, вы&nbsp;можете указать реквизиты самостоятельно.
+                  </span>
+                </p>
+                <p class="content__descr-accent">
+                  <span>ПЛАТИТЬ ВОВРЕМЯ&nbsp;&mdash; ДЕШЕВЛЕ!</span> В&nbsp;первые 20&nbsp;дней после выдачи
+                  постановления
+                  штраф можно
+                  оплатить со&nbsp;скидкой 50%. Для своевременной оплаты штрафов настройте уведомления в&nbsp;Личном
+                  кабинете.
+                </p>
+              </div>
+            </div>
+            <img src="dist/src/img/content-1.jpg" alt="Штрафы ГИБДД" class="content__img">
+          </li>
+
+          <li class="content__item accordion">
+            <div class="content__text-wrap">
+              <button class="accordion-control">
+                <span class="title-icon title-icon--2"></span>
+                <h3 class="content__title content__title-2">Судебные задолженности</h3>
+                <span class="accordion-icon"></span>
+              </button>
+              <div class="accordion-content">
+                <p class="content__descr">
+                  <span class="content__descr-top">
+                    Для поиска начислений в&nbsp;ГИС ГМП укажите документы: паспорт РФ, ИНН, СНИЛС
+                    или номер штрафа.
+                  </span>Исполнительного производства.&#10;Вы&nbsp;можете указать реквизиты платежа самостоятельно,
+                  заполнив
+                  форму.
+                </p>
+                <p class="content__descr-accent">
+                  <span>УДОБНО!</span> Судебные задолженности можно погасить как сразу, так и&nbsp;по&nbsp;частям,
+                  комфортными для вас
+                  платежами. Информацию о&nbsp;совершенных платежах сохраняйте в&nbsp;Личном кабинете.
+                </p>
+              </div>
+            </div>
+            <img src="dist/src/img/content-2.jpg" alt="Судебные задолженности" class="content__img">
+          </li>
+
+          <li class="content__item accordion">
+            <div class="content__text-wrap">
+              <button class="accordion-control">
+                <span class="title-icon title-icon--3"></span>
+                <h3 class="content__title content__title-3">Налоги</h3>
+                <span class="accordion-icon"></span>
+              </button>
+              <div class="accordion-content">
+                <p class="content__descr">Для поиска начислений по&nbsp;налогам в&nbsp;ГИС ГМП укажите ИНН или Индекс
+                  налогового документа, если у&nbsp;вас на&nbsp;руках есть квитанция.</p>
+                <p class="content__descr-accent">
+                  <span>ВАЖНО!</span> Согласно законодательству&nbsp;РФ вы&nbsp;не&nbsp;можете оплачивать
+                  налоги за&nbsp;других физических лиц. Принимаются только платежи физических лиц.
+                </p>
+              </div>
+            </div>
+            <img src="dist/src/img/content-3.jpg" alt="Налоги" class="content__img">
+          </li>
+
+          <li class="content__item accordion">
+            <div class="content__text-wrap">
+              <button class="accordion-control">
+                <span class="title-icon title-icon--4"></span>
+                <h3 class="content__title content__title-4">Услуги Росреестра</h3>
+                <span class="accordion-icon"></span>
+              </button>
+              <div class="accordion-content">
+                <p class="content__descr">В&nbsp;поисковой строке укажите Код платежа, который был отправлен вам
+                  на&nbsp;почтовый ящик, указанный при подаче запроса в&nbsp;Росреестре.</p>
+                <p class="content__descr-accent">
+                  <span>НЕТ КОДА?</span> Если у&nbsp;вас ещё нет кода платежа, перейдите на&nbsp;сайт
+                  <a href="rosreestr.ru">rosreestr.ru</a> и&nbsp;сформируйте запрос на&nbsp;оплату электронных услуг
+                  Росреестра.
+                </p>
+              </div>
+            </div>
+            <img src="dist/src/img/content-4.jpg" alt="Услуги Росреестра" class="content__img">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="container">
+        <h2 class="partners__title">С нами работают</h2>
+        <ul class="partners__list">
+          <li class="partners__item">
+            <img src="dist/src/img/partner-1.png" alt="логотип партнера" class="partners__logo">
+            <span class="partners__name">Партнёр 1</span>
+          </li>
+          <li class="partners__item">
+            <img src="dist/src/img/partner-2.png" alt="логотип партнера" class="partners__logo">
+            <span class="partners__name">Компания-партнер с длинным названием</span>
+          </li>
+          <li class="partners__item">
+            <img src="dist/src/img/partner-3.png" alt="логотип партнера" class="partners__logo">
+            <span class="partners__name">Партнёр 3</span>
+          </li>
+          <li class="partners__item">
+            <img src="dist/src/img/partner-4.png" alt="логотип партнера" class="partners__logo">
+            <span class="partners__name">Название партнёра 4</span>
+          </li>
+          <li class="partners__item">
+            <img src="dist/src/img/partner-5.png" alt="логотип партнера" class="partners__logo">
+            <span class="partners__name">Компания-партнёра 5</span>
+          </li>
+          <li class="partners__item">
+            <img src="dist/src/img/partner-6.png" alt="логотип партнера" class="partners__logo">
+            <span class="partners__name">Партнер 6 с длинным названием</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__copyright">
+        <span>&copy;&nbsp;2012&nbsp;&mdash; 2020</span>
+        <span> ООО «Название компании»</span>
+      </div>
+      <img src="dist/src/img/trust-logo.png" alt="логотип secure" class="footer__img">
+    </footer>
+  </main>
+  <div class="modal">
+    <div class="modal__overlay">
+      <div class="modal__window">
+        <button class="modal__close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g id="ic_close" transform="translate(-6 -6)">
+              <rect id="Rectangle_31" data-name="Rectangle 31" width="24" height="24" transform="translate(6 6)"
+                fill="none" />
+              <path id="Union_3" data-name="Union 3"
+                d="M-778.527,850.174l-9.241,9.241-1.732-1.733,9.241-9.241-9.187-9.187,1.732-1.733,9.188,9.188,9.241-9.241,1.732,1.733-9.241,9.241,9.294,9.294-1.732,1.733Z"
+                transform="translate(796.5 -830.467)" fill="none" />
+            </g>
+          </svg>
+        </button>
+        <div class="modal__content">
+          <span>Введите логин и пароль для входа в Личный кабинет</span>
+          <form action="#" class="modal__form">
+            <label for="email"><input id="email" type="email" placeholder="Логин"></label>
+            <label for="password"><input id="password" type="password" placeholder="Пароль" autocomplete="off"></label>
+            <button class="modal__form-button">Войти</button>
+          </form>
+          <a href="#" class="reminder">Напомнить пароль</a>
+          <a href="#" class="registration">Регистрация</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <script src="dist/src/js/accordion.js"></script>
+  <script src="dist/src/js/burger.js"></script>
+  <script src="dist/src/js/dropdown.js"></script>
+  <script src="dist/src/js/modal.js"></script>
+</body>
+
+</html>

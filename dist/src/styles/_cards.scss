@@ -1,0 +1,39 @@
+@import 'colors';
+
+.cards {
+	padding: 60px 0;
+	@media (max-width: 799px) {
+		padding: 0;
+		margin-bottom: 30px;
+	}
+	@media (max-width: 375px) {
+		padding: 27px 0 0 0;
+	}
+	&__title {
+		margin: 0;
+		margin-bottom: 17px;
+		font-size: 36px;
+		font-weight: 700;
+		color: $black;
+		text-align: center;
+		@media (max-width: 799px) {
+			display: none;
+		}
+	}
+
+	&__title--mobile {
+		display: none;
+		@media (max-width: 799px) {
+			display: block;
+			margin: 0;
+			margin-bottom: 17px;
+			font-size: 26px;
+			font-weight: 700;
+			color: $black;
+			text-align: center;
+		}
+		@media (max-width: 375px) {
+			font-size: 20px;
+		}
+	}
+}

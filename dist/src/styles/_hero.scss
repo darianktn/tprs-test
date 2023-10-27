@@ -1,0 +1,37 @@
+.hero {
+	padding: 157px 0 109px 0;
+	background-image: url('../img/hero-bg@2x.jpg');
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@media (max-width: 799px) {
+		margin-bottom: 30px;
+	}
+	@media (max-width: 470px) {
+		padding: 88px 0 34px;
+	}
+	&__title {
+		margin: 0;
+		margin-bottom: 16px;
+		font-size: 36px;
+		font-weight: 700;
+		color: $white;
+		@media (max-width: 799px) {
+			font-size: 26px;
+			text-align: center;
+		}
+		@media (max-width: 375px) {
+			font-size: 18px;
+		}
+	}
+
+	&__descr {
+		font-size: 16px;
+		font-weight: 400;
+		color: $white;
+		@media (max-width: 375px) {
+			font-size: 12px;
+			padding: 0 5px;
+		}
+	}
+}

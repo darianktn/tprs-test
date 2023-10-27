@@ -1,0 +1,73 @@
+@import 'colors';
+
+.form {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 12px;
+	@media (max-width: 799px) {
+		margin-bottom: 30px;
+	}
+	@media (max-width: 375px) {
+		margin-bottom: 3px;
+		padding: 0 5px;
+	}
+	.input-wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-basis: 84%;
+		padding: 24px 23px 20px 23px;
+		border-radius: 8px;
+		border: 2px solid $grey-blue;
+		background-color: $white;
+		margin-right: 17.5px;
+		@media (max-width: 799px) {
+			flex-basis: 100%;
+			padding: 13px 23px 13px 23px;
+			margin-right: 0;
+		}
+		@media (max-width: 375px) {
+			padding: 11px 13px 11px 11px;
+		}
+	}
+
+	label {
+		width: 100%;
+		input {
+			width: 100%;
+			border: none;
+			padding: 0;
+		}
+		input::placeholder {
+			font-size: 16px;
+			font-weight: 400;
+			color: $grey;
+		}
+	}
+
+	&__search-icon {
+		display: none;
+		width: 24px;
+		height: 24px;
+		background-image: url('../icons/icon-search.svg');
+		background-repeat: no-repeat;
+		@media (max-width: 799px) {
+			display: inline-block;
+		}
+	}
+
+	&__search-btn {
+		padding: 14px 35px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 8px;
+		background-color: $red;
+		color: $white;
+		font-size: 24px;
+		font-weight: 700;
+		@media (max-width: 799px) {
+			display: none;
+		}
+	}
+}

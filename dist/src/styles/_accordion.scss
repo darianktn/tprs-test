@@ -1,0 +1,62 @@
+@media (max-width: 799px) {
+	.accordion-control {
+		display: flex;
+		align-items: center;
+		padding: 0;
+	}
+
+	.open .accordion-content {
+		opacity: 1;
+		padding: 15px 5px 0;
+	}
+
+	.accordion-content {
+		max-height: 0;
+		opacity: 0;
+		overflow: hidden;
+		transition: 0.3s ease-in-out;
+		box-sizing: content-box;
+	}
+}
+
+.title-icon {
+	display: none;
+	@media (max-width: 799px) {
+		display: inline-block;
+		width: 44px;
+		height: 44px;
+		margin-right: 20px;
+	}
+}
+
+.title-icon--1 {
+	background-image: url('../icons/ic-gibdd1.svg');
+	background-repeat: no-repeat;
+}
+
+.title-icon--2 {
+	background-image: url('../icons/ic-fssp.svg');
+	background-repeat: no-repeat;
+}
+
+.title-icon--3 {
+	background-image: url('../icons/ic-nalog.svg');
+	background-repeat: no-repeat;
+}
+
+.title-icon--4 {
+	background-image: url('../icons/ic-rr.svg');
+	background-repeat: no-repeat;
+}
+
+.accordion-icon {
+	display: none;
+	@media (max-width: 799px) {
+		display: inline-block;
+		margin-left: auto;
+		width: 14px;
+		height: 14px;
+		background-image: url('../icons/icon-dropdown-arrow.svg');
+		background-repeat: no-repeat;
+	}
+}
